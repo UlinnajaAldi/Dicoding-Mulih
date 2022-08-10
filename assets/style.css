@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    color: #322d29;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    overflow: hidden;
+}
+nav .logo{
+    margin-right: auto;
+    width: 90px;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 30px;
+}
+nav li:nth-child(3){
+    padding-right: 0;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    font-weight: bold;
+    color: #3081dd;
+}
+nav .menu{
+    display: none;
+}
+.main-container{
+    position: relative;
+}
+.main-container-item{
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8f1fa;
+}
+.main-container img{
+    display: block;
+    margin-left: auto;
+    width: 40%;
+}
+.main-container-item-content{
+    width: 40%;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content article{
+    margin: 20px 0px;
+}
+article h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+}
+.container-isi{
+    flex-basis: 100%;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.gambar{
+    max-width: 100%;
+    border-radius: 10px;
+}
+aside h2{
+    text-align: center;
+}
+aside{
+    margin:20px 0px;
+}
+.aside-container{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.aside-container-isi{
+    padding: 30px;
+    width: 40%;
+}
+.aside-container img{
+    width: 100px;
+    border-radius: 100%;
+}
+footer{
+    background-color: #e8f1fa;
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 590px) {
+    .main-container-item{
+        height: 135vw;
+        flex-direction: column;
+    }
+    .main-container img{
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+    .main-container-item-content{
+        margin: 0;
+        width: 80%;
+        text-align: center;
+        font-size: 4vw;
+    }
+    nav{
+        flex-direction: column;
+        padding: 10px ;
+        justify-content: center;
+        align-items: center;
+    }
+    nav .logo{
+        margin: auto;
+        width: 30%;
+    }
+    nav ul{
+        display: none;
+        text-align: center;
+    }
+    nav li{
+        font-size: 4vw;
+        padding: 10px;
+    }
+    nav .menu{
+        display: inline-block;
+        width: 6vw;
+        right: 3vw;
+        top: 2.5%;
+        position: absolute;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .content{
+        font-size: 80%;
+    }
+    .aside-container{
+        flex-direction: column;
+    }
+    .aside-container-isi{
+        width: 80%;
+        text-align: center;
+        font-size: 4vw;
+    }
+}
